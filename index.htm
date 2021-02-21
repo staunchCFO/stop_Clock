@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monserrat:200,400,800&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Stop Clock</h1>
+    <section id="controls">
+        <div class="input-group">
+            <label for="minutes-input">Minutes</label>
+            <input type="number" placeholder="0" id="minutes-input" max="300" min="0">
+        </div>
+        <div class="input-group">
+            <label for="seconds-input">Seconds</label>
+            <input type="number" placeholder="0" id="seconds-input" max="59" min="0" step="5">
+        </div>
+
+        <button type="button" id="start-button" onclick="startTimer();">Start</button>
+        <button type="button" id="pause-button" disabled onclick="pauseTimer();">Pause</button>
+        <button type="button" id="stop-button" disabled onclick="stopTimer();">Stop</button>
+    </section>
+
+    <h2>
+        <span id="minutes">00</span> : <span id="seconds">00</span>
+    </h2>
+    
+
+
+
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
